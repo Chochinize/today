@@ -1,0 +1,33 @@
+.animation1{
+animation: move 3s 1s forwards;
+}
+@keyframes move {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(500px);
+	}
+}
+.animation-2{
+	height: 200px;
+	width: 200px;
+	margin: 20%;
+	background-color: lawngreen;
+}
+.animation-2:hover{
+	animation: fancy 2s ease-in 3;
+	opacity: 0.5;
+}
+
+@keyframes fancy {
+	50%{
+		transform: scale(1.4) rotate(80deg);
+	}
+	80%{
+		transform: scale(1.2) rotate(40deg);
+	}
+	100%{
+		transform: scale(1) rotate(0deg);
+	}
+}
